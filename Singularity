@@ -36,11 +36,16 @@ export PATH="`pwd`/cmake-3.4.1-Linux-x86_64/bin:$PATH"
 rm -rf cmake-3.4.1-Linux-x86_64.tar.gz
 
 #Install Python 3
-wget https://www.python.org/ftp/python/3.5.6/Python-3.5.6.tgz
-tar xvf Python-3.5.6.tgz
+apt-get install -y python3
 
 # Install KAT
-
+git clone https://github.com/TGAC/KAT.git
+cd KAT
+./build_boost.sh
+./autogen.sh
+./configure
+make
+make install
 
 %labels
  edited from HPC UEA Team  hpc.admin@uea.ac.uk
