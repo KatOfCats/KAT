@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: gcc:5.5.0
+From: gcc:8.4.0
 IncludeCmd: yes
 
 %setup
