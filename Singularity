@@ -28,6 +28,8 @@ IncludeCmd: yes
 # run OS updates
 apt-get update -y  && apt-get upgrade -y
 
+apt-get install -y --no-install-recommends apt-utils
+
 # Install cmake
 cd /usr/local/
 wget https://cmake.org/files/v3.4/cmake-3.4.1-Linux-x86_64.tar.gz
@@ -36,9 +38,11 @@ export PATH="`pwd`/cmake-3.4.1-Linux-x86_64/bin:$PATH"
 rm -rf cmake-3.4.1-Linux-x86_64.tar.gz
 
 #Install Python 3
-apt-get install -y python3
-pip3 install numpy scipy matplotlib sphinx
-export PATH="`pwd`/python3/bin:$PATH"
+#apt-get install -y python3
+#pip3 install numpy scipy matplotlib sphinx
+#export PATH="`pwd`/python3/bin:$PATH"
+sudo apt update
+sudo apt install python3.8
 
 # Install KAT
 git clone https://github.com/TGAC/KAT.git
