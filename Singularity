@@ -38,10 +38,9 @@ export PATH="`pwd`/cmake-3.4.1-Linux-x86_64/bin:$PATH"
 rm -rf cmake-3.4.1-Linux-x86_64.tar.gz
 
 #Install Python 3
-add-apt-repository ppa:deadsnakes/ppa
 apt-get update
-apt-get install python3.6
-#pip3 install numpy scipy matplotlib sphinx
+apt-get install python3
+pip3 install numpy scipy matplotlib sphinx
 #export PATH="`pwd`/python3/bin:$PATH"
 
 
