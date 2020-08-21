@@ -42,7 +42,13 @@ rm -rf cmake-3.4.1-Linux-x86_64.tar.gz
 #pip3 install numpy scipy matplotlib sphinx
 #export PATH="`pwd`/python3/bin:$PATH"
 
-apt-get install python3.6
+apt install build-essential checkinstall
+apt install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+wget https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tar.xz
+tar xvf Python-3.6.0.tar.xz
+cd Python-3.6.0/
+./configure
+sudo make altinstall
 
 # Install KAT
 git clone https://github.com/TGAC/KAT.git
