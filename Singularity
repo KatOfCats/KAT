@@ -41,8 +41,8 @@ rm -rf cmake-3.4.1-Linux-x86_64.tar.gz
 #apt-get install -y python3
 #pip3 install numpy scipy matplotlib sphinx
 #export PATH="`pwd`/python3/bin:$PATH"
-sudo apt update
-sudo apt install python3.8
+apt update
+apt install python3.8
 
 # Install KAT
 git clone https://github.com/TGAC/KAT.git
